@@ -1,0 +1,133 @@
+*{
+    padding:0;
+    margin:0;
+}
+.container{
+    position:relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.section1{
+    position: relative;
+    height:100vh;
+    background-color: black;
+    background-image: url("car2.png");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.nav{
+    margin-top: 10px;
+    display: flex;
+    position:fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    z-index:1;
+}
+.nleft{
+    width:40%;
+}
+.nright{
+    width:38%;
+}
+.options{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+button{
+    border:0;
+    text-decoration: 0;
+    background-color: transparent;
+    color:white;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-right: 45px;
+    cursor:pointer;
+}
+.click:hover{
+    height: 30px;
+    width: 54px;
+    border-radius: 50px;
+    background-color: #295278;
+}
+.click2:hover{
+    height: 30px;
+    width: 64px;
+    border-radius: 50px;
+    background-color: #295278;
+}
+.click3:hover{
+    height: 30px;
+    width: 74px;
+    border-radius: 50px;
+    background-color: #295278;
+}
+.click4:hover{
+    height: 30px;
+    width: 88px;
+    border-radius: 50px;
+    background-color: #295278;
+}
+.clicK1{
+    height:30px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: #1D3954;
+}
+.bodypart{
+    position:relative;
+    color:white;
+    margin-top: 12%;
+    text-align: center;
+}
+.bodypart h2{
+    font-size: 65px;
+}
+.bodypart h3{
+    font-size: 40px;
+}
+.bodypart button{
+    margin-top: 100px;
+    height: 50px;
+    width: 250px;
+    background-color: #295278;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.section2{
+    position: relative;
+    height:100vh;
+}
+#about{
+    position: relative;
+    color:white;
+    background-color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 60vh;
+}
+#about h2{
+    position: relative;
+    margin-top:70px;
+    margin-bottom: 5%;
+}
+
+.section2_1{
+    display: flex;
+    flex-direction: row;
+}
+.section2_1 img{
+    height: 600px;
+    width: 600px;
+}
+.section2_1 .part2{
+    width: 30%;
+    letter-spacing: 1px;
+    font-size: 21px;
+    margin-left: 10%;
+}

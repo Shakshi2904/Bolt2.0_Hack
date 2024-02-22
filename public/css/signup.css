@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:white;
+    font-family: 'Montserrat';
+}
+
+body{
+    
+    width:100%;
+    height:100%;
+    background-color:black;
+    background-image: url("car.png");
+}
+#main{
+    width:100%;
+    height:100vh;
+}
+#workingarea{
+    position: relative;
+    margin: 0 auto;
+    width:100vw;
+    height:100vh;
+    max-width:1880px;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:6vh;
+    width:100%;
+    padding:20px 0;
+}
+
+#nav img{
+    margin-left:20px;
+    height: 40px;
+    margin-top: 21px;
+}
+#nleft{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+#nleft a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-weight:700;
+}
+
+#footer{
+    position: absolute;
+    bottom:0;
+    height: 30px;
+    width:100vw;
+    background-color: #333333;
+    display:flex;
+    align-items:center;
+    box-shadow: 0px -4px 8px 0px rgba(255, 255, 255, 0.25);
+}
+#footer p{
+    margin-left:45px;
+    color:black;
+    font-size: 20px;
+    font-style: normal; 
+    font-weight: 600;
+}
+
+#box{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box{
+    position:relative;
+    width:27vw;
+    display:flex;
+    justify-content: center;
+    background-color:rgba(217, 217, 217, 0.15);
+    width: 400px;
+    border-radius: 20px;
+    height: 590px;
+    margin-top: 1.75%;
+    
+}
+.login-box h1{
+    display:flex;
+    justify-content: center;
+    padding:8vh 0 6vh 0;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+form .input_box_intial {
+    height:30px;
+    width:300px;
+    position: relative;
+    margin-top:10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.input_box_intial input[type=text]{
+    position:relative;
+    margin-left: 0;
+    height:100%;
+    width:100%;
+    outline:none;
+    background: transparent;
+    border:none;
+    border-bottom:1px solid white;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+form .input_box {
+    height:30px;
+    width:300px;
+    position: relative;
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+.input_box input[type=text],input[type=password],input[type=email]{
+    height:100%;
+    width:100%;
+    outline:none;
+    padding-left:30px;
+    background: transparent;
+    border:none;
+    border-bottom:1px solid white;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    font-weight: 100;
+}
+.input_box input[type=radio]{
+    height: 10px;
+    width:30px;
+    fill: #000;
+    stroke-width: 1px;
+    stroke: white;
+    padding:30px;
+}
+.ff{
+    font-size: 14px;
+    font-weight: 200;
+}
+.input_box .icon{
+    position: absolute;
+    top:50%;
+    left: 3px;
+    transform: translateY(-50%);
+}
+::placeholder{
+    color:white;
+    padding:3px;
+}
+
+.input_box input[type=submit]{
+    border: none;
+    margin-left: 32%;
+    width: 40%;
+    border-radius: 30px;
+    padding: 7px 10px;
+    text-align: center;
+    font-family: Open Sans;
+    background-color: #295278;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 100;
+    transition: 0.4s all;
+}
+
+@media (max-width: 281px){
+    #workingarea{
+        width: 116.6vw;
+        height: 116.5vh;
+    }
+    #footer{
+        width: 116.6vw;
+    }
+}

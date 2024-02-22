@@ -1,0 +1,22 @@
+.scrollimg{
+    padding-top: 30px;
+    display: flex;
+    overflow-x: auto;
+}
+.n{
+    width: 300px;
+    height: 25vh;
+}
+.checked{
+    color: yellow;
+}
+.fa{
+    margin-top: 40px;
+}
+.star{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(177, 168, 168);
+    margin: 15px;
+    text-align: center;
+}

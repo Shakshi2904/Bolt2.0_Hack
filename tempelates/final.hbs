@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body >
+    <div id="main">
+        <div id="workingarea">
+            <div id="nav">
+                <div id="nleft">
+                    <img src="ins.png" alt="">
+                </div>
+                <div id="nright">
+                    <a id="e" href="/home">Home</a>
+                    <a id="e" class="/final" href="">Check</a>
+                    <a id="e" href="/home#p">About</a>
+                    <a id="e" href="/home#container3">Contact</a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                      <a href="page1.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="page4.html" class="nav-link">Check</a>
+                      </li>
+                    <li class="nav-item">
+                      <a href="page1.html#p" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="page1.html#container3" class="nav-link">Contact</a>
+                    </li>
+                  </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <div class="text">
+              <h1>Upload your Image</h1>
+            </div>
+            <div class="box">
+              <div class="main">
+                <div class="dropimage" >
+                  <label for="input-file" id="drop-area">
+                    <input type="file" accept="image/*" id="input-file" hidden>
+                    <div id="img-view">
+                      <img src="photo.png">
+                      <p id="p">
+                        Drag and drop or click here <br>to upload image
+                        <span>Upload any images from desktop</span>
+                      </p>
+                      
+                    </div>
+                  </label>
+                </div>
+                <button class="submit">Submit</button>
+              </div>
+            </div>
+            
+        </div>
+        <div id="footer">
+            <p>© 2023 aiwithsahil</p>
+        </div>
+      
+    </div>
+    <script>
+      const selectImage=document.getElementById("drop-area");
+      const inputFile=document.getElementById("input-file");
+      const imgArea=document.getElementById("img-view");
+       const para=document.getElementById("p");
+
+selectImage.addEventListener('click', function () {
+	inputFile.click();
+})
+
+inputFile.addEventListener('change', function () {
+	const image = this.files[0]
+	if(image.size < 2000000) {
+		const reader = new FileReader();
+		reader.onload = ()=> {
+			const allImg = imgArea.querySelectorAll('img');
+			allImg.forEach(item=> item.remove());
+			const imgUrl = reader.result;
+			const img = document.createElement('img');
+			img.src = imgUrl;
+			imgArea.appendChild(img);
+			imgArea.classList.add('active');
+			imgArea.dataset.img = image.name;
+      para.textContent="";
+		}
+		reader.readAsDataURL(image);
+	} else {
+		alert("Image size more than 2MB");
+	}
+})
+        const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const t = document.querySelector("#textarea");
+const h = document.querySelector(".h1");
+const a = document.querySelector("#main_part");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+  t.classList.toggle("active");
+  h.classList.toggle("active");
+  a.classList.toggle("active");
+})
+
+
+const navLink =document.querySelectorAll(".nav-link");
+navLink.forEach(n => n.addEventListener("click",closeMenu));
+
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+  t.classList.remove("active");
+  h.classList.remove("active");
+  a.classList.remove("active");
+}
+    </script>
+</body>
+</html>

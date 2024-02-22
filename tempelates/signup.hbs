@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body >
+    <div id="main">
+        <div id="workingarea">
+            <div id="nav">
+                <div id="nleft">
+                    <img src="ins.png" alt="">
+                </div>
+            </div>
+            <div id="box">
+            <div class="login-box">
+                <form action="/signup" method="post">
+                    <h1 >REGISTER</h1>
+                    <div class="input_box_intial">
+                        <div id="ileft">
+                            <input type="text" name="fname" placeholder="First Name">
+                        </div>
+                        <div id="iright">
+                            <input type="text" name="lname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <input type="email" name="email" placeholder="Email">
+                        <div class="icon"><img src="email.png" alt=""></div>
+                    </div>
+                    <div class="input_box">
+                        <input type="text" name="username" placeholder="Username">
+                        <div class="icon"><img src="profile.png" alt=""></div>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" name="password" placeholder="Password">
+                        <div class="icon"><img src="password.png" alt=""></div>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" name="cpassword" placeholder="Confirm Password">
+                        <div class="icon"><img src="password.png" alt=""></div>
+                    </div>
+                    <div class="input_box ff">
+                        Gender:
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other">
+                        <label for="other">Other</label>
+                    </div>
+                    <div class="input_box output">
+                        <input type="submit" name="" value="Register →">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p></p>
+    </div>
+    </div>
+</body>
+</html>
